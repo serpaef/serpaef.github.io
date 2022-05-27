@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', monospace;
+  color: #ff8d47;
+  text-shadow: 
+    -2px -2px 0px #000,
+    -2px 2px 0px #000,
+    2px -2px 0px #000,
+    2px 0px 0px #000;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  background: url('./media/mrd7stj7vtv71.webp');
+  background-size: 150%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: bg-transition 80s ease-in-out infinite;
+}
+
+h1 {
+  letter-spacing: 5px;
+}
+
+h2 {
+  letter-spacing: 3px;
+}
+
+.social {
+  margin-top: 1rem;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #5abc5a;
+  text-shadow: 
+    -1px -1px 0px #000,
+    -1px 1px 0px #000,
+    1px -1px 0px #000,
+    1px 0px 0px #000;
+  font-size: 20px;
+  padding: 1rem 3rem;
+  border: 2px solid #5abc5a;
+  min-width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: cubic-bezier(0.445, 0.05, 0.55, 0.95) 0.1s;
+}
+
+a:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bg-transition {
+  0% {
+    background-position: 0% 80%;
+  }
+  10% {
+    background-position: 72% 64%;
+  }
+  20% {
+    background-position: 64% 14%;
+  }
+  30% {
+    background-position: 11% 22%;
+  }
+  40% {
+    background-position: 18% 69%;
+  }
+  50% {
+    background-position: 40% 55%;
+  }
+  60% {
+    background-position: 86% 8%;
+  }
+  70% {
+    background-position: 70% 75%;
+  }
+  80% {
+    background-position: 24% 19%;
+  }
+  90% {
+    background-position: 59% 21%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
