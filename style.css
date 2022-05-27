@@ -95,3 +95,50 @@ a:hover {
     background-position: 0% 80%;
   }
 }
+
+/* Hamburger menu */
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+  transition: 0.4s ease-in-out 0;
+}
+
+.checkbox .trace {
+  width: 50px;
+  height: 3px;
+  background-color: #5abc5a;
+  position: absolute;
+  transition: 0.4s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+  top: 26px;
+  transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+  top: 46px;
+}
+
+.checkbox .trace:nth-child(3) {
+  top: 66px;
+  transform: rotate(0);
+}
+
+#toggle {
+  display: none;
+}
