@@ -114,7 +114,7 @@ a:hover {
   justify-content: center;
   cursor: pointer;
   z-index: 100;
-  transition: 0.4s ease-in-out 0;
+  transition: 0.4s ease-in-out 0s;
 }
 
 .checkbox .trace {
@@ -147,15 +147,14 @@ a:hover {
 
 .menu {
   position: absolute;
-  top: 30px;
+  top: 28px;
   right: 30px;
   background: transparent;
   height: 40px;
   width: 40px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 0 orange;
+  box-shadow: 0px 0px 0px 0px #282a36;
   z-index: -1;
-  transition: 0.4s ease-in-out 0;
+  transition: 0.4s ease-in-out 0s;
 }
 
 .menu-items {
@@ -170,16 +169,16 @@ a:hover {
   z-index: 2;
   opacity: 0;
   visibility: hidden;
-  transition: 0.4s ease-in-out 0;
+  transition: 0.4s ease-in-out 0s;
 }
 
 .menu-items ul {
   list-style-type: none;
 }
 
-.menu-items ul li {
+.menu-items ul li a{
   margin: 10px 0;
-  color: #000;
+  color: #FFF;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -201,4 +200,18 @@ a:hover {
 #toggle:checked + .checkbox .trace:nth-child(3) {
   transform: rotate(-45deg);
   top: 48px
+}
+
+#toggle:checked + .checkbox {
+  background-color: #282a36;
+}
+
+#toggle:checked ~ .menu {
+  box-shadow: 0px 0px 0px 100vw #282a36;
+  z-index: 1;
+}
+
+#toggle:checked ~ .menu-items {
+  visibility: visible;
+  opacity: 1;
 }
